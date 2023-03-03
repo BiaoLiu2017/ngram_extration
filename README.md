@@ -6,8 +6,7 @@
 corpus.txt中存在大量的高频字符串，如：  
 ```text
 <sprite=3>  
-【坐标分享】3级土地 (777,225)  
-新技术！苹果手机三年冲的钱退回，你和代褪失败可以，不影响游戏，威信T9883K  
+【坐标分享】3级土地 (777,225)    
 1级码头-(372,737) 
 ``` 
 通过ngram_extration可以快速挖掘这类特征字符串。  
@@ -19,7 +18,7 @@ pip install ngram_extration
 
 - 用法  
 ```python
-from ngram_extration.ngram_extration import NgramExtration
+from ngram_extration import NgramExtration
 
 def load_list_from_text(path):
     res = []
